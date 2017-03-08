@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Share-API</title>
+</head>
+<script>
+//http://share.baidu.com/code
+	with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<body>
+
+	<section id="share">
+		<div class="bdsharebuttonbox" data-tag="share_1">
+			<a class="bds_qzone" data-cmd="qzone" href="#"></a>
+			<a class="bds_tsina" data-cmd="tsina"></a>
+			<a class="bds_tqq" data-cmd="tqq"></a>
+			<a class="bds_weixin" data-cmd="weixin"></a>
+		</div>
+
+		<script type="text/javascript">
+			window._bd_share_config = {
+				common : {
+					//此处放置通用设置
+					bdText : '自定义分享内容',	
+					bdDesc : '自定义分享摘要',	
+					bdUrl : '自定义分享地址', 	
+					bdPic : '自定义分享图片'
+				},
+				share : [
+					//此处放置分享按钮设置
+					{
+						"tag" : "share_1",//表示该配置只会应用于data-tag值一致的分享按钮。如果不设置tag，该配置将应用于所有分享按钮。
+						"bdSize" : 32,//分享按钮的尺寸
+						'bdCustomStyle':'样式文件地址'//自定义样式，引入样式文件
+					}
+				],
+				slide : [
+					//此处放置浮窗分享设置
+					{
+						bdImg : 0,//分享浮窗的颜色
+						bdPos : "right",//分享浮窗的位置
+						bdTop : 100//分享浮窗与可是区域顶部的距离(px)
+
+					}
+				],
+				image : [
+					//此处放置图片分享设置
+					{
+						"tag" : "img_1",//表示该配置只会应用于data-tag值一致的图片。如果不设置tag，该配置将应用于所有图片。
+						viewType : 'list',//图片分享按钮样式。
+						viewPos : 'top',//图片分享展示层的位置。
+						viewColor : 'black',//图片分享展示层的背景颜色。
+						viewSize : '16',//图片分享展示层的图标大小。
+						viewList : ['qzone','tsina','huaban','tqq','renren']//自定义展示层中的分享按钮类型和排列顺序。
+					}
+				],
+				selectShare : [
+					//此处放置划词分享设置
+					{
+
+						"bdSelectMiniList" : ['qzone','tqq','kaixin001','bdxc','tqf'],//自定义弹出浮层中的分享按钮类型和排列顺序
+						"bdContainerClass" : "容器class名"//"bdContainerClass" : "容器class名"
+					}
+				]
+			}
+		</script>
+	</section>
+</body>
+</html>
